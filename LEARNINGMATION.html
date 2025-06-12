@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learningmation - Learn 2D Animation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    header {
+      background-color: #222;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #0ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #1a1a1a;
+      padding: 1rem 0;
+    }
+
+    nav button {
+      background: none;
+      border: 1px solid #555;
+      color: #eee;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #333;
+      color: #0ff;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    img.visual-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Learningmation</h1>
+    <p>Your Gateway to Mastering 2D Animation</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('intro')">Introduction</button>
+    <button onclick="showSection('guide')">Guide</button>
+    <button onclick="showSection('visuals')">Visual Representations</button>
+  </nav>
+
+  <div class="content">
+    <section id="intro" class="section active">
+      <h2>What is Animation?</h2>
+      <p>Animation is the art of bringing images to life. In 2D animation, flat characters and environments are manipulated frame by frame to simulate movement and emotion.</p>
+      <p>Whether you're drawing on paper, using software like Stick Nodes or Adobe Animate, the core concept remains the same: motion through sequence.</p>
+      <p>2D animation is used in cartoons, explainer videos, games, and much more. It's a blend of creativity, storytelling, and technical skill.</p>
+    </section>
+
+    <section id="guide" class="section">
+      <h2>Complete Guide to 2D Animation</h2>
+      <ul>
+        <li><strong>1. Understanding Timing & Spacing:</strong> These are the building blocks of realistic motion.</li>
+        <li><strong>2. Tools of the Trade:</strong> Use software like Stick Nodes, Adobe Animate, Toon Boom Harmony, or free tools like Pencil2D.</li>
+        <li><strong>3. Keyframes and Inbetweens:</strong> Learn how to structure animations using main poses and transition frames.</li>
+        <li><strong>4. Storyboarding:</strong> Plan your scenes visually before animating.</li>
+        <li><strong>5. Animation Principles:</strong> Master squash & stretch, anticipation, follow-through, and more from the 12 principles of animation.</li>
+        <li><strong>6. Audio Syncing:</strong> Learn how to lip-sync dialogue and match sound effects.</li>
+        <li><strong>7. Exporting and Sharing:</strong> How to render, compress, and share your work on social media or YouTube.</li>
+        <li><strong>8. Practice:</strong> Consistent daily practice helps you improve faster than any tool or course.</li>
+      </ul>
+    </section>
+
+    <section id="visuals" class="section">
+      <h2>Visual Representations</h2>
+      <p>Below are some images to visually guide your journey in 2D animation.</p>
+      <img class="visual-img" src="/mnt/data/89914f80-91e2-4a58-8b43-475fdf61141a.jpg" alt="Running Animation Breakdown" />
+      <img class="visual-img" src="/mnt/data/154f0437-b7e0-42e4-8338-f5f1c0e370e5.jpg" alt="Movement Cycles of Two-Legged Figures" />
+      <img class="visual-img" src="/mnt/data/6dce6b36-2c51-471f-819b-5e2014df0148.jpg" alt="Dashkin Animation Sequence" />
+    </section>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
